@@ -6,6 +6,7 @@ public class Main {
         double valorJuegoFinal = 0;
         double valorAccesorioFInal = 0;
         Scanner sc = new Scanner(System.in);
+        System.out.println("¡Tienda de videojuegos!\n");
         System.out.println("Ingrese el numero al que corresponde su solicitud\n1. Comprar videojuego\n2. Comprar accesorio\n3. Solicitar membresía\n-------------------------");
         String solicutud = sc.nextLine();
         switch (solicutud){
