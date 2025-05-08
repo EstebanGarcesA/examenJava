@@ -19,17 +19,17 @@ public class Main {
                     valorJuegoDescuentoRecurrente = valorJuego-(valorJuego*0.05);
                     if (valorJuego>150000){
                         valorJuegoFinal = valorJuegoDescuentoRecurrente - (valorJuego*0.1);
-                        System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+"\nComo es cliente recurrente se le aplica un descuento del 5% y el juego al tener un valor superios de 150000 pesos, se le aplica un descuento del 10% al valor base del juego, por lo tanto el valor final es de " +valorJuegoFinal+"\n-----------");
+                        System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+" pesos\nComo es cliente recurrente se le aplica un descuento del 5% y el juego al tener un valor superios de 150000 pesos\nSe le aplica un descuento del 10% al valor base del juego, por lo tanto el valor final es de " +valorJuegoFinal+"Pesos\n-----------");
                     } else {
-                        System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+"\nComo es cliente recurrente se le aplica un descuento del 5% al valor base del juego, por lo tanto el valor final es de " +valorJuegoDescuentoRecurrente+"\n-----------");
+                        System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+" pesos\nComo es cliente recurrente se le aplica un descuento del 5% al valor base del juego, por lo tanto el valor final es de " +valorJuegoDescuentoRecurrente+" Pesos\n-----------");
 
                     }
                 } else {
                         if (valorJuego>150000){
                             valorJuegoFinal = valorJuego - (valorJuego*0.1);
-                            System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+"\nEl juego al tener un valor superios de 150000 pesos, se le aplica un descuento \ndel 10% al valor base del juego, por lo tanto el valor final es de " +valorJuegoFinal+"\n-----------");
+                            System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+" pesos\nEl juego al tener un valor superios de 150000 pesos, se le aplica un descuento \ndel 10% al valor base del juego, por lo tanto el valor final es de " +valorJuegoFinal+" Pesos\n-----------");
                         } else {
-                            System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+"\nNo se le aplica ningun descuento\n-----------");
+                            System.out.println("-----------\nUsted decidio comprar un video juego, el valor del juego es de "+ valorJuego+" pesos\nNo se le aplica ningun descuento\n-----------");
                     }
                 }
                 break;
@@ -41,12 +41,12 @@ public class Main {
                 double valorAccesorio = sc.nextDouble();
                 if (valorAccesorio>200000){
                     valorAccesorioFInal= valorAccesorio-(valorAccesorio*0.08);
-                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 8%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+"\n-----------");
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+" pesos\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 8%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+" Pesos\n-----------");
                 } else if ((valorAccesorio>50000)&&(valorAccesorio<200000)) {
                     valorAccesorioFInal= valorAccesorio-(valorAccesorio*0.05);
-                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 5%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+"\n-----------");
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+" pesos\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 5%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+" Pesos\n-----------");
                 }else {
-                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto, no tiene ningun descuento, por lo tanto su valor final es de:\n"+valorAccesorio+"\n-----------");
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+" pesos\nTiene un valor base de "+valorAccesorio+"\nDebido a esto, no tiene ningun descuento, por lo tanto su valor final es de:\n"+valorAccesorio+" Pesos\n-----------");
                 }
                 break;
             case "3":
