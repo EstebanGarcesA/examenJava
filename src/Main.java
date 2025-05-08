@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         double valorJuegoDescuentoRecurrente = 0;
         double valorJuegoFinal = 0;
+        double valorAccesorioFInal = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el numero al que corresponde su solicitud\n1. Comprar videojuego\n2. Comprar accesorio\n3. Solicitar membresía\n-------------------------");
         String solicutud = sc.nextLine();
@@ -33,9 +34,28 @@ public class Main {
                 }
                 break;
             case "2":
-                
+                System.out.println("---------------\nComprar Accesorio\n---------------");
+                System.out.println("Indica el tipo de accesorio");
+                String accesorio = sc.nextLine();
+                System.out.println("Indique el valor del accesorio");
+                double valorAccesorio = sc.nextDouble();
+                if (valorAccesorio>200000){
+                    valorAccesorioFInal= valorAccesorio-(valorAccesorio*0.08);
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 8%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+"\n-----------");
+                } else if ((valorAccesorio>50000)&&(valorAccesorio<200000)) {
+                    valorAccesorioFInal= valorAccesorio-(valorAccesorio*0.05);
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 5%, por lo tanto su valor final es de:\n"+valorAccesorioFInal"\n-----------");
+                }else {
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto, no tiene ningun descuento, por lo tanto su valor final es de:\n"+valorAccesorio"\n-----------");
+                }
                 break;
             case "3":
+                System.out.println("---------------\nSolicitar membresia\n---------------");
+                System.out.println("Ingrese la edad del cliente");
+                int edad = sc.nextInt();
+                if (edad<18){
+                    System.out.println("Usted tiene"+edad+"Los menores de 18 años no tienen permitido solicitar una membresia");
+                }
                 break;
         }
     }
