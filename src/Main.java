@@ -44,9 +44,9 @@ public class Main {
                     System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 8%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+"\n-----------");
                 } else if ((valorAccesorio>50000)&&(valorAccesorio<200000)) {
                     valorAccesorioFInal= valorAccesorio-(valorAccesorio*0.05);
-                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 5%, por lo tanto su valor final es de:\n"+valorAccesorioFInal"\n-----------");
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto tiene un descuento del 5%, por lo tanto su valor final es de:\n"+valorAccesorioFInal+"\n-----------");
                 }else {
-                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto, no tiene ningun descuento, por lo tanto su valor final es de:\n"+valorAccesorio"\n-----------");
+                    System.out.println("-----------\nEl accesorio escogido fue "+accesorio+"\nTiene un valor base de "+valorAccesorio+"\nDebido a esto, no tiene ningun descuento, por lo tanto su valor final es de:\n"+valorAccesorio+"\n-----------");
                 }
                 break;
             case "3":
@@ -54,7 +54,11 @@ public class Main {
                 System.out.println("Ingrese la edad del cliente");
                 int edad = sc.nextInt();
                 if (edad<18){
-                    System.out.println("Usted tiene"+edad+"Los menores de 18 años no tienen permitido solicitar una membresia");
+                    System.out.println("-----------\nUsted tiene "+edad+" añosn\nLos menores de 18 años no tienen permitido solicitar una membresia\n-----------");
+                } else if ((edad>=18)&&(edad<=49)) {
+                    System.out.println("-----------\nUsted tiene "+edad+" años\nTiene derecho a una membresia estándar\n-----------");
+                }else {
+                    System.out.println("-----------\nUsted tiene "+edad+" años\nTiene derecho a una membresia premium\n-----------");
                 }
                 break;
         }
